@@ -5,7 +5,7 @@ plugins {
 
 catalog {
     versionCatalog {
-        from(files("gradle/libs.versions.toml"))
+        from(files("centralized.version.catalog.toml"))
 
     }
 }
@@ -15,7 +15,7 @@ publishing {
         create<MavenPublication>("maven") {
             groupId = "com.simonchius.android"
             artifactId = "version.catalog"
-            version = "1.0.3"
+            version = "1.1.0"
             from(components["versionCatalog"])
         }
     }
