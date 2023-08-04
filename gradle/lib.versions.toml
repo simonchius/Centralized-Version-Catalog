@@ -1,0 +1,16 @@
+[versions]
+androidxComposeBom = "2023.01.00"
+gradleplugin = "7.4.2"
+
+
+[libraries]
+#compose
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "androidxComposeBom" }
+
+
+[bundles]
+composeLibs = ["androidx-compose-bom"]
+
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "gradleplugin" }

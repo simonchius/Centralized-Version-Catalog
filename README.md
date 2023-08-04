@@ -1,0 +1,3 @@
+# Centralized Version Catalog for Android
+An Android version catalog is a file that contains a list of dependencies and their versions. It is used to manage dependencies and plugins in a scalable way. Android version catalogs are supported by Gradle, the build system for Android.
+A centralized version catalog is having the version catalog set up in a remote repository and consuming it in a project and dependent modules.
